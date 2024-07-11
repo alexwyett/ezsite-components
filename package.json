@@ -1,0 +1,70 @@
+{
+  "name": "@cagen/ezsite-components",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "npm run storybook",
+    "storybook": "storybook dev -p 6006",
+    "build": "tsup",
+    "release": "npm run build && release-it"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "treeshake": true,
+    "sourcemap": "inline",
+    "minify": true,
+    "clean": true,
+    "dts": true,
+    "splitting": false,
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "external": [
+      "react"
+    ],
+    "injectStyle": false
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.1",
+    "@storybook/addon-interactions": "^8.2.1",
+    "@storybook/addon-links": "^8.2.1",
+    "@storybook/addon-onboarding": "^8.2.1",
+    "@storybook/blocks": "^8.2.1",
+    "@storybook/nextjs": "^8.2.1",
+    "@storybook/react": "^8.2.1",
+    "@storybook/test": "^8.2.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "eslint-plugin-storybook": "^0.8.0",
+    "postcss": "^8",
+    "release-it": "^17.5.0",
+    "storybook": "^8.2.1",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5"
+  }
+}
