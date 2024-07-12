@@ -1,5 +1,18 @@
-export * as Button from './components/Button';
-export * as Blockquote from './components/Blockquote';
-export * as Header from './components/Header';
-export * as Footer from './components/Footer';
-export * as Logo from './components/Logo';
+import Button from './components/Button';
+import Blockquote from './components/Blockquote';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Logo from './components/Logo';
+import Panel, { Div, PanelInner, PanelOuter } from './components/Panel';
+
+export {
+  Button,
+  Blockquote,
+  Header,
+  Footer,
+  Logo,
+  Panel,
+  PanelInner,
+  PanelOuter,
+  Div
+}
