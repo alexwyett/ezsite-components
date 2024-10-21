@@ -91,7 +91,7 @@ export async function UploadFile(filename: string, data: any, contentType?: any,
   return response;
 }
 
-export default async function GetJson(Key: string): Promise<object> {
+export async function GetJson(Key: string): Promise<object> {
   const s3Client = Client();
   
   const s3Response = await s3Client.send(
