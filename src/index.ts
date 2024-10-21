@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Panel, { Div, PanelInner, PanelOuter } from './components/Panel';
+import S3 from './libs/s3';
 
 export {
   Button,
@@ -14,5 +15,6 @@ export {
   Panel,
   PanelInner,
   PanelOuter,
-  Div
+  Div,
+  S3
 }

@@ -20,6 +20,7 @@ export default function Footer({
           <h2 className='font-bold text-2xl uppercase text-white mb-4'>Other EZ sites</h2>
           <ul className="flex gap-4">
             <li><a href='https://ezpdf.rocks' target="_blank" className="text-white">ezPDF</a></li>
+            <li><a href='https://ezlinksite.vercel.app' target="_blank" className="text-white">ezLINKS</a></li>
             <li><a href='https://ezjson.vercel.app' target="_blank" className="text-white">ezJSON</a></li>
           </ul>
         </div>
