@@ -1,9 +1,9 @@
-import React from 'react';
+import { ReactElement } from 'react';
 
 interface IPluralProps {
   count: number,
-  single: string | React.ReactElement,
-  plural: string | React.ReactElement,
+  single: string | ReactElement,
+  plural: string | ReactElement,
   zero?: string,
   loading?: string
   prependValue?: boolean

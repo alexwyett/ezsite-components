@@ -1,4 +1,6 @@
-export default function Submit({ children, disabled, className }: React.ComponentProps<'button'>) {
+import { ComponentProps } from "react";
+
+export default function Submit({ children, disabled, className }: ComponentProps<'button'>) {
   return (
     <button 
       disabled={disabled} 

@@ -1,6 +1,7 @@
+import { ComponentProps } from "react";
 import classNames from "classnames";
 
-export default function Button(props: React.ComponentProps<"button">) {
+export default function Button(props: ComponentProps<"button">) {
   const { className, ...rest } = props;
   return (
     <button 

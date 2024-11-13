@@ -1,6 +1,7 @@
+import { ComponentProps } from 'react';
 import classNames from "classnames";
 
-export function Div(props: React.ComponentProps<"div"> & { defaultClassNames: string }) {
+export function Div(props: ComponentProps<"div"> & { defaultClassNames: string }) {
   const { className, defaultClassNames, ...rest } = props;
   return (
     <div 
@@ -15,7 +16,7 @@ export function Div(props: React.ComponentProps<"div"> & { defaultClassNames: st
   )
 }
 
-export function PanelInner(props: React.ComponentProps<"div">) {
+export function PanelInner(props: ComponentProps<"div">) {
   return (
     <Div 
       {...props} 
@@ -24,13 +25,13 @@ export function PanelInner(props: React.ComponentProps<"div">) {
   )
 }
 
-export function PanelOuter(props: React.ComponentProps<"div">) {
+export function PanelOuter(props: ComponentProps<"div">) {
   return (
     <Div defaultClassNames='px-4 lg:px-0 py-4 lg:py-6 bg-gray-500' {...props} />
   )
 }
 
-export default function Panel(props: React.ComponentProps<"div">) {
+export default function Panel(props: ComponentProps<"div">) {
   return (
     <PanelOuter className='px-4 lg:px-0 py-4 lg:py-6 bg-gray-500'>
       <PanelInner {...props} />

@@ -1,4 +1,4 @@
-import { FormEvent } from "react";
+import { ComponentProps, FormEvent } from "react";
 
 export function submitEvent(e: FormEvent<HTMLFormElement>) {
   const body = new FormData();
@@ -33,7 +33,7 @@ export function submitEvent(e: FormEvent<HTMLFormElement>) {
 
 export type onSubmitParams = Parameters<(e: FormEvent<HTMLFormElement>, data: FormData) => void | Promise<void>>;
 
-export type PromiseFormProps = Omit<React.ComponentProps<'form'>, 'onSubmit'> & {
+export type PromiseFormProps = Omit<ComponentProps<'form'>, 'onSubmit'> & {
   onSubmit: (...args: onSubmitParams) => void | Promise<any>
 };
 

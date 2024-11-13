@@ -1,6 +1,6 @@
 {
   "name": "@cagen/ezsite-components",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -22,9 +22,6 @@
     "format": [
       "cjs",
       "esm"
-    ],
-    "external": [
-      "react"
     ],
     "injectStyle": false
   },
