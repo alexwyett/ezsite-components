@@ -1,3 +1,4 @@
+import useCountdown from '@bradgarropy/use-countdown';
 import Button from './components/Button';
 import Blockquote from './components/Blockquote';
 import Header from './components/Header';
@@ -11,7 +12,7 @@ import Spinner from './components/Spinner';
 import Submit from './components/Submit';
 import Dialog from './components/Dialog';
 import Portal from './components/Portal';
-import DialogContext from './context/Dialog';
+import DialogProvider from './context/Dialog';
 import Panel, { Div, PanelInner, PanelOuter } from './components/Panel';
 import * as S3 from './libs/s3';
 
@@ -33,7 +34,8 @@ export {
   FormSpinner,
   Spinner,
   Submit,
-  DialogContext,
+  DialogProvider,
   Dialog,
-  Portal
+  Portal,
+  useCountdown
 }
